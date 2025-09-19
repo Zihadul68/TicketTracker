@@ -1,9 +1,10 @@
 <?php
-include 'config.php';
-
-if($conn){
-    echo "Database connected successfully!";
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: view/login.html');
+    exit();
 } else {
-    echo "Connection failed!";
+    echo "Welcome, " . $_SESSION['username'] . " (" . $_SESSION['role'] . ")";
 }
 ?>
+
