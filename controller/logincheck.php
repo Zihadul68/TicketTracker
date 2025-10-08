@@ -27,13 +27,13 @@ if(isset($_POST['loginData'])){
 
         $_SESSION['username'] = $username;
         $_SESSION['user_type'] = $usertype;
-        $_SESSION['last_activity'] = time(); // session last activity
+        $_SESSION['last_activity'] = time(); 
 
-        // Set 5-min cookie for session tracking (non-sensitive)
+        // 5mins
         setcookie('status', 'true', time() + 300, '/');
 
         $response['success'] = true;
-        $response['message'] = "Login successful!";
+        $response['message'] = "Login successful!";             
         $response['usertype'] = $usertype;
         echo json_encode($response);
         exit();
