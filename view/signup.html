@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../asset/JS/signup.js" defer></script>
+    <title>Signup</title>
+</head>
+<body>
+
+    <h1>Signup Form</h1>
+    <link rel="stylesheet" href="../asset/CSS/signup.css">
+    <div class="signup-container">
+        <form method="post" action="../controller/signupCheck.php" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+                <tr>
+                    <td>UserName:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="text" name="username" id="username" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Full Name:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="text" name="fullname" id="fullname" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="email" name="email" id="email" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="text" name="phone" id="phone" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="date" name="dob" id="dob" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Select Account Type</th>
+                </tr>
+                <tr>
+                    <td>Account Type:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="radio" id="user" name="type" value="traveller">Traveller
+                            <input type="radio" id="admin" name="type" value="admin">Admin
+                            <input type="radio" id="operator" name="type" value="operator">Operator
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Security Information</th>
+                </tr>
+                <tr>
+                    <td>Security Question:</td>
+                    <td>
+                        <div class="input-container">
+                            <select name="security_question" id="security_question">
+                                <option value="" disabled selected>Select a question</option>
+                                <option value="sports">What is your Favourite Sports?</option>
+                                <option value="first_pet">What was the name of your first pet?</option>
+                                <option value="favorite_player">Who is your favorite player?</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Answer:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="text" name="security_answer" id="security_answer" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Account Security</th>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="password" name="password" id="password" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td>
+                        <div class="input-container">
+                            <input type="password" name="confirmpassword" id="confirmPassword" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="security-info">
+                        <input type="submit" name="submit" value="Submit" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <a href="./login.html">Login</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
