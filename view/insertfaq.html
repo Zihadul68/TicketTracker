@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Admin FAQ Management</title>
+</head>
+<body>
+    <h1>Manage FAQs</h1>
+    <form method="post" action="addFAQ.php">
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th colspan="2">Add a New FAQ</th>
+            </tr>
+            <tr>
+                <td>Question:</td>
+                <td>
+                    <textarea name="question" rows="4" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Answer:</td>
+                <td>
+                    <textarea name="answer" rows="6" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Visible To:</td>
+                <td>
+                    <input type="radio" name="user_type" value="traveller" id="traveller" required>
+                    <label for="traveller">Traveller</label><br>
+                    <input type="radio" name="user_type" value="operator" id="operator">
+                    <label for="operator">Operator</label><br>
+                    <input type="radio" name="user_type" value="admin" id="admin">
+                    <label for="admin">Admin</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Add FAQ">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Existing FAQs</h2>
+    <p>This section can display the current FAQs stored in the database.</p>
+</body>
+</html>
