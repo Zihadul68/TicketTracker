@@ -6,7 +6,7 @@ if (!isset($_SESSION['username']) || !isset($_COOKIE['status'])) {
     exit();
 }
 
-// 5-minute inactivity check
+
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 300)) {
     session_unset();
     session_destroy();
@@ -15,6 +15,6 @@ if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 
     exit();
 }
 
-// Update last activity
+
 $_SESSION['last_activity'] = time();
 ?>

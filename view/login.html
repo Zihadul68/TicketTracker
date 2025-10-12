@@ -2,17 +2,18 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../asset/css/login.css">
+    <link rel="stylesheet" href="../asset/CSS/login.css">
     <script src="../asset/JS/login.js" defer></script>
 </head>
 <body>
     <h1>Login Form</h1>
 
     <div class="login-container">
-        <form id="loginForm">
+        <form method="post" action="../controller/logincheck.php" onsubmit="return validateLogin()">
+
             <table>
                 <tr>
-                    <th colspan="2">Login Information</th>
+                    <th colspan="3">Login Information</th>
                 </tr>
                 <tr>
                     <td>Username:</td>
@@ -20,15 +21,16 @@
                 </tr>
                 <tr>
                     <td>Password:</td>
-                    <td><input type="password" id="password" name="password" /></td>
+                    <td>
+                        <input type="password" id="password" name="password" />
+                    </td>
+                    <td>
+                        <button type="button" id="revealPassword">Show</button>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="forgot-password">
-<<<<<<< HEAD
-                        <a href="./forgot_password.html">Forgot Password?</a>
-=======
-                        <a href="./forgotPassword.html">Forgot PassSword?</a>
->>>>>>> 4423c96 (Added new login/signup/forgot password pages, travel menu)
+                        <a href="./forgetPassword.html">Forgot Password?</a>
                     </td>
                 </tr>
                 <tr>

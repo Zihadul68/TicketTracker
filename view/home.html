@@ -1,0 +1,166 @@
+
+
+<html>
+<head>
+   
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            align-items: center;
+            justify-content: space-around;
+            width: 1250px;
+            margin:  auto;
+            padding: 20px;
+            
+            
+
+        }
+        header{
+            background-color: white;
+            position: sticky;
+            top:0;
+            z-index: 1000; 
+        }
+        nav>ul,nav{
+            display: flex;
+        }
+        nav >ul>li {
+           
+            list-style: none;
+            margin-right: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .footer{
+            display: flex;
+            
+            justify-content: space-around;
+            width: 1250px;
+            margin: 50px auto;
+            
+        }
+        .p{
+            text-align: center;
+        }
+        .footer >ul>li{
+            list-style: none;
+        }
+        footer{
+            background-color:gainsboro;
+            padding: 20px;
+          
+        }
+        .banner-headding{
+            margin-bottom:10px;
+            font-style: italic;
+        }
+        main{
+           /* height:750px; */
+           width: 1400px;
+           background-color:white;
+           margin:50px auto;
+           text-align:center;
+            
+        }
+        .box{
+            border:2px solid black;
+            padding:20px;
+            border-radius:15px;
+            box-shadow: 5px 5px gray;
+        }
+        .box-container{
+            display:flex;
+            margin:10px;
+            gap:30px;
+            margin-top:20px;
+        }
+        .offer-section{
+            display:flex;
+            justify-content:center;
+            margin-top:20px;
+        }
+        .offer-container{
+            display:flex;
+            margin:10px;
+            gap:30px;
+            
+        }
+        .offer-box{
+            border:2px solid black;
+            padding:20px;
+            border-radius:15px;
+            /* box-shadow: 5px 5px gray; */
+            background-color:gray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav >
+         <a href="home.html"><h3>TicketTracker</h3></a>
+         <ul>
+            <li><a href="home.html" >Home</a></li>
+            <!-- <li><a href="" >About</a></li> -->
+            <li><a href="contract.html" >Contact Us</a></li>
+            <!-- <li><a href="">Profile</a></li> -->
+            <li><a href="booking.php">Booking</a></li>
+         </ul>
+        </nav>
+        </header>
+        <hr>
+        <main>
+            <h1 class="banner-headding">Where to go?</h1>
+            <img class="banner-img" src="../asset/images/aiubBusLogo.png" alt="">
+           <div class="box-container">
+           <div class="box" >
+                <h2>Dhaka to Khulna</h2>
+                <h3>Time</h3>
+                <p>“Heading to Khulna from Dhaka? We’ve got you covered with AC, Non-AC, or Sleeper buses. Sit back, relax, and enjoy the ride!”</p>
+                
+            </div>
+            <div class="box" >
+                <h2>Dhaka to Cox Bazar</h2>
+                <h3>Time</h3>
+                <p>“Planning a trip to Cox’s Bazar? Take our AC, Non-AC, or Sleeper buses from Dhaka. Comfortable seats, smooth journey – just hop on!”</p>
+                
+            </div>
+            <div class="box" >
+                <h2>Dhaka to Jhenaidah</h2>
+                <h3>Time</h3>
+                <p>“Going to Jhenaidah from Dhaka? Choose from AC, Non-AC, or Sleeper. Fast, comfy, and hassle-free travel – we’ve got your back!”</p>
+                
+            </div>
+           </div>
+          
+          
+        </main>
+     
+     <footer>
+       
+            <div class="footer">
+                <a href="Traveller_menu.php"><h3>TicketTracker</h3></a>
+            <ul>
+               <li><a href="home.html" >Home</a></li>
+               
+               <li><a href="contract.html" >Contact Us</a></li>
+             
+               <li><a href="booking.php">Booking</a></li>
+            </ul>
+            </div>
+            <div class="p">
+                <p>© 2019 - 2025 TicketTracker -Zihadul. All Rights Reserved <br>
+
+                    AIUB, Kuratoli, Dhaka - 1229, Bangladesh.</p>
+            </div>
+           
+           
+     </footer>
+</body>
+</html>

@@ -15,6 +15,7 @@ h1 {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -33,16 +34,12 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-input[type="text"], input[type="email"], input[type="date"], input[type="password"], select {
+input[type="text"] {
     width: 80%;
     padding: 10px;
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-input[type="radio"] {
-    margin-right: 10px;
 }
 
 input[type="submit"] {
@@ -52,11 +49,37 @@ input[type="submit"] {
     border-radius: 4px;
     width: 100%;
     font-size: 16px;
+    cursor: pointer;
 }
 
-
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
 a {
-    margin:47%;
+    margin: 47%;
     color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    position: absolute;
+    top: 50px; 
+    left: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.back-link a {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
 }
